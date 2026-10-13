@@ -75,10 +75,10 @@
               </p>
             </v-alert>
 
-            <!-- Effective Date of Continuation -->
+            <!-- Date of Continuation Out -->
             <section>
               <header>
-                <h2>Effective Date of Continuation Out</h2>
+                <h2>Date of Continuation Out</h2>
               </header>
               <div
                 id="effective-date-section"
@@ -92,6 +92,7 @@
                     :initialEffectiveDate="initialEffectiveDate"
                     :validateForm="showErrors"
                     :showAuthorizationError="!dateAuthorizationValid && showErrors"
+                    :effectiveDateLabel="'Date'"
                     @update:effectiveDate="effectiveDate=$event"
                     @valid="effectiveDateValid=$event"
                   />
